@@ -17,4 +17,5 @@ function bubbleSort (array) {
     }
     return array;
 }
-console.log(bubbleSort([3,4,342,2,3,2,5,6,7,8,8,9,234]));
+const arr = [3,4,342,2,3,2,5,6,7,8,8,9,234];
+console.log(bubbleSort(arr));

@@ -1,21 +1,18 @@
-/*
-    ASC BUBBLE SORT BY HENZEL
- */
 
-function bubbleSort (array) {
+function bubbleSort (arr) {
 
-    for (let i = 0; i < array.length; i++) {
-        
-        for (let j = 0; j < array.length - 1 - i; j++) {
-            if (array[j] > array[j+1]){
-                [array[j], array[j+1]] = [array[j+1], array[j]];
-                
-            }
-            
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - 1 -i; j++) {
+            if (arr[j] > arr[j+1]) {
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+            }    
         }
-        
     }
-    return array;
+    return arr;
+
+
 }
-const arr = [3,4,342,2,3,2,5,6,7,8,8,9,234];
+
+const arr = [2,3,4,4,3,6,678,79,54,34,123,6546,79,4534,678679,7989,654];
+
 console.log(bubbleSort(arr));
